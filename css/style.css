@@ -1,3 +1,11 @@
+/* Main Styling */
+html,body {
+  font-family: 'Open Sans','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+
+
 .fade-in-10s {
     animation: fadeIn ease 10s;
     -webkit-animation: fadeIn ease 10s;
