@@ -4,7 +4,24 @@
     -moz-animation: fadeIn ease 10s;
     -o-animation: fadeIn ease 10s;
     -ms-animation: fadeIn ease 10s;
+
   }
+  .fade-in-delay {
+    animation: fadeIn ease 30s;
+    -webkit-animation: fadeIn ease 30s;
+    -moz-animation: fadeIn ease 30s;
+    -o-animation: fadeIn ease 30s;
+    -ms-animation: fadeIn ease 30s;
+    animation-delay:2.5s;
+  } 
+
+  .fade-in-20s {
+    animation: fadeIn ease 20s;
+    -webkit-animation: fadeIn ease 20s;
+    -moz-animation: fadeIn ease 20s;
+    -o-animation: fadeIn ease 20s;
+    -ms-animation: fadeIn ease 20s;
+  } 
 
   .fade-in-30s {
     animation: fadeIn ease 30s;
@@ -13,6 +30,7 @@
     -o-animation: fadeIn ease 30s;
     -ms-animation: fadeIn ease 30s;
   } 
+
   @keyframes fadeIn {
     0% {
       opacity:0;
@@ -56,4 +74,57 @@
     100% {
       opacity:1;
   }
+}
+
+.hideMe1{
+  animation:hideMe 0.5s 1;
+ -webkit-animation:hideMe 2s 1; /* Duration of fading and repetitions */
+ animation-fill-mode: forwards;
+
+ animation-delay:2s; /* Pause before fade */
+ -webkit-animation-delay:2s; /* Safari and Chrome */
+ -webkit-animation-fill-mode: backwards;  /* End by showing the content */
+} 
+
+.hideMe2{
+  animation:hideMe 0.5s 1;
+ -webkit-animation:hideMe 2s 1; /* Duration of fading and repetitions */
+ animation-fill-mode: forwards;
+
+ animation-delay:2.5s; /* Pause before fade */
+ -webkit-animation-delay:3s; /* Safari and Chrome */
+ -webkit-animation-fill-mode: backwards;  /* End by showing the content */
+} 
+
+@keyframes hideMe{
+ from {opacity :1;}
+ to {opacity :0;}
+}
+
+@-webkit-keyframes hideMe{
+ from {opacity :1;}
+ to {opacity :0;}
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* attach the animations to the elements via their id attribute using a delay of 0s and 50% of the runtime respectively */
+
+#one {
+  animation: fade 3s infinite 0s;
+}
+
+#two {
+  animation: fade 3s infinite 1.5s;
 }
