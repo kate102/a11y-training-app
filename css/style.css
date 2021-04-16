@@ -1,4 +1,4 @@
-.fade-in1 {
+.fade-in-10s {
     animation: fadeIn ease 10s;
     -webkit-animation: fadeIn ease 10s;
     -moz-animation: fadeIn ease 10s;
@@ -6,7 +6,7 @@
     -ms-animation: fadeIn ease 10s;
   }
 
-  .fade-in2 {
+  .fade-in-30s {
     animation: fadeIn ease 30s;
     -webkit-animation: fadeIn ease 30s;
     -moz-animation: fadeIn ease 30s;
