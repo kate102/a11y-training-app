@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="> -->
+        <title>A11y Training App - Screen Reader 1</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <nav>
+            <a href="../../index.html">Home</a>            
+        </nav>
+
+        <main role="main">
+            <h1>Screen Reader Challenge 1</h1>
+            <h2>Lets start with an easy one...</h2>
+            <p>Jonathan Jo is one of my favorite poems by A. A. Milne <br />
+                In this challenge you need to answer a simple question.
+            </p>
+            <p>The first verse is visable but none of the others are. <br />
+            So you will need to use the screen reader in order to find out the answer.</p>
+            <h2>Question: What do you have to give Jonathan Jo?</h2>
+            <p>Jonathan Jo<br />
+            Has a mouth like an 'O'<br />  
+            And a wheelbarrow full of surprises<br />
+            If you ask for a bat,<br />     
+            or something like that,<br />
+            He has got it, whatever the size is.</p>
+
+            <div class="hidden-text">
+                <!-- If you are reading this you are cheating and might as well go and do something else with your time -->
+                <p>If you're wanting a ball,<br />
+                It's no trouble at all;<br />
+                Why, the more that you ask for, the merrier -<br />
+                Like a hoop and a top,<br />
+                And a watch that won't stop,<br />
+                And some sweets, and an Aberdeen terrier.</p>
+                
+                <p>Jonathan Jo<br />
+                Has a mouth like an "O,"<br />
+                But this is what makes him so funny:<br />
+                If you give him a smile,<br />
+                Only once in a while,<br />
+                Then he never expects any money!</p>
+            </div>
+            <form onsubmit="return myFunction()">
+                Answer: <input type="text" id="answer_1" size="20" name="answer_1"><br><br>
+                <input type="submit" value="Submit"> 
+            </form>
+                    
+            <script>
+                function myFunction() {
+                    console.log("If you are reading this you are cheating and might as well go and do something else with your time");
+
+                var x = document.getElementById("answer_1").value;
+                if ( answer_1 != "Smile") {
+                    document.write("Your answer was incorrect");
+                }
+            }
+
+            </script>
+            <br />
+            <a href="02_sr_challenge_1.html">Second Challenge</a>
+
+        </main>
+
+        <footer>
+
+            <a href="01_sr_instructions.html">Screen Reader Instructions</a>
+        </footer>       
+    </body>
+</html>
