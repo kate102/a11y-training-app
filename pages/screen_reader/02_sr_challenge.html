@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="> -->
         <title>A11y Training App - Screen Reader 1</title>
         <link rel="stylesheet" href="../../css/style.css">
     </head>
@@ -31,12 +30,12 @@
 
             <div class="hidden-text">
                 <!-- If you are reading this you are cheating and might as well go and do something else with your time -->
-                <p>If you're wanting a ball,<br />
+                <!-- <p>If you're wanting a ball,<br />
                 It's no trouble at all;<br />
                 Why, the more that you ask for, the merrier -<br />
                 Like a hoop and a top,<br />
                 And a watch that won't stop,<br />
-                And some sweets, and an Aberdeen terrier.</p>
+                And some sweets, and an Aberdeen terrier.</p> -->
                 
                 <p>Jonathan Jo<br />
                 Has a mouth like an "O,"<br />
@@ -46,32 +45,47 @@
                 Then he never expects any money!</p>
             </div>
             <h2>Question: What do you have to give Jonathan Jo?</h2>
-            <form onsubmit="return myFunction()">
-                Answer: <input type="text" id="answer_1" size="20" name="answer_1"><br><br>
+            <!-- <button onclick="nextChallenge()">Replace document</button> -->
+
+            <form onsubmit="return checkAnswer()">
+                Answer: <input type="text" id="answer_1" size="20" name="answer_1"><br>
                 <input type="submit" value="Submit"> 
             </form>
                     
             <script>
-                function myFunction() {
-                    console.log("If you are reading this you are cheating and might as well go and do something else with your time");
-console.log("Answer [",answer_1,"]");
-                var x = document.getElementById("answer_1").value;
-                if ( x != "Smile") {
-                    document.write("Your answer was incorrect [",x,"]");
-                } else {
-                    document.write("Your answer was Correct[",x,"]");                 
+                function sr_instructions() {
+                    location.replace("01_sr_instructions.html");
                 }
-            }
+                
 
+                function nextChallenge() {
+                    location.replace("03_sr_challenge.html");
+                }
+
+                function wrongAnswer() {
+                    document.write("Your answer was incorrect [",x,"]");
+                    location.replace("fail_page.html");
+                }
+
+                function checkAnswer() {
+                    console.log("If you are reading this you are cheating and might as well go and do something else with your time");
+                    console.log("Answer [",answer_1,"]");
+                    var x = document.getElementById("answer_1").value;
+                    if ( x != "Smile") {
+                        document.write("Your answer was incorrect [",x,"]");
+                        location.replace("fail_page.html");
+                        // wrongAnswer();
+                    } else {
+                        document.write("Your answer was Correct[",x,"]");  
+                        location.replace("03_sr_challenge.html");
+                        // return nextChallenge();
+                    }
+                }
             </script>
-            <br />
-            <a href="02_sr_challenge_1.html">Second Challenge</a>
-
         </main>
 
         <footer>
-
-            <a href="01_sr_instructions.html">Screen Reader Instructions</a>
+            <button onclick="sr_instructions()">Screen Reader Instructions</button>
         </footer>       
     </body>
 </html>
