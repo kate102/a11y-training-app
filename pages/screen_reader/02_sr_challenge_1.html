@@ -21,7 +21,7 @@
             </p>
             <p>The first verse is visable but none of the others are. <br />
             So you will need to use the screen reader in order to find out the answer.</p>
-            <h2>Question: What do you have to give Jonathan Jo?</h2>
+
             <p>Jonathan Jo<br />
             Has a mouth like an 'O'<br />  
             And a wheelbarrow full of surprises<br />
@@ -45,6 +45,7 @@
                 Only once in a while,<br />
                 Then he never expects any money!</p>
             </div>
+            <h2>Question: What do you have to give Jonathan Jo?</h2>
             <form onsubmit="return myFunction()">
                 Answer: <input type="text" id="answer_1" size="20" name="answer_1"><br><br>
                 <input type="submit" value="Submit"> 
@@ -53,10 +54,12 @@
             <script>
                 function myFunction() {
                     console.log("If you are reading this you are cheating and might as well go and do something else with your time");
-
+console.log("Answer [",answer_1,"]");
                 var x = document.getElementById("answer_1").value;
-                if ( answer_1 != "Smile") {
-                    document.write("Your answer was incorrect");
+                if ( x != "Smile") {
+                    document.write("Your answer was incorrect [",x,"]");
+                } else {
+                    document.write("Your answer was Correct[",x,"]");                 
                 }
             }
 

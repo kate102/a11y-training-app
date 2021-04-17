@@ -2,10 +2,12 @@
 html,body {
   font-family: 'Open Sans','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
+  background-color: teal;
+  color: aliceblue;
 }
 
 .hidden-text {
-  color: aliceblue;
+  color: teal;
   
 }
 
