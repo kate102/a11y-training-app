@@ -21,13 +21,16 @@
             <p>The first verse is visable but none of the others are. <br />
             So you will need to use the screen reader in order to find out the answer.</p>
 
-            <p>Jonathan Jo<br />
+            <div class="boxed">
+
+
+            Jonathan Jo<br />
             Has a mouth like an 'O'<br />  
             And a wheelbarrow full of surprises<br />
             If you ask for a bat,<br />     
             or something like that,<br />
-            He has got it, whatever the size is.</p>
-
+            He has got it, whatever the size is.
+        </div>
             <div hidden="true">
                 <!-- If you are reading this you are cheating and might as well go and do something else with your time -->
                 <p>If you're wanting a ball,<br />
@@ -44,13 +47,14 @@
                 Only once in a while,<br />
                 Then he never expects any money!</p>
             </div>
+
             <h2>Question: What do you have to give Jonathan Jo?</h2>
             <!-- <button onclick="nextChallenge()">Replace document</button> -->
 
             <form onsubmit="return checkAnswer()">
                 <label for="answer_1">Answer:</label>
-                <input type="text" id="answer_1" size="20" name="answer_1"><br>
-                <input class="btn" type="submit" value="Submit"> 
+                <input class="curved" type="text" id="answer_1" size="20" name="answer_1"><br>
+                <input class="curved" type="submit" value="Submit"> 
             </form>
 
             <p id="answer_message">
@@ -93,7 +97,7 @@
         </main>
 
         <footer>
-            <button class="btn" onclick="sr_instructions()">Screen Reader Instructions</button>
+            <button class="curved" onclick="sr_instructions()">Screen Reader Instructions</button>
         </footer>       
     </body>
 </html>

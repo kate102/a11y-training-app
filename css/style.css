@@ -4,14 +4,28 @@ html,body, a {
   line-height: 1.7em;
   background-color: rgb(2, 87, 87);
   color: aliceblue;
+  text-align:center
 }
 
 .hidden-text {
   color: rgb(2, 87, 87);  
 }
 
-.btn {
+.curved {
   border-radius: 10px;
+}
+
+div.boxed {
+  border-color: aliceblue;
+  border-style: solid;
+  padding: 10px;
+}
+
+div.ex1 {
+  border-style: solid;
+  border-color: #0000ff;
+  width: 50%;
+  position: center;
 }
 
 .fade-in-10s {
