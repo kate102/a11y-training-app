@@ -28,16 +28,16 @@
             or something like that,<br />
             He has got it, whatever the size is.</p>
 
-            <div class="hidden-text">
+            <div hidden="true">
                 <!-- If you are reading this you are cheating and might as well go and do something else with your time -->
-                <!-- <p>If you're wanting a ball,<br />
+                <p>If you're wanting a ball,<br />
                 It's no trouble at all;<br />
                 Why, the more that you ask for, the merrier -<br />
                 Like a hoop and a top,<br />
                 And a watch that won't stop,<br />
-                And some sweets, and an Aberdeen terrier.</p> -->
+                And some sweets, and an Aberdeen terrier.</p>
                 
-                <p>Jonathan Jo<br />
+                <p aria-hidden="true">Jonathan Jo<br />
                 Has a mouth like an "O,"<br />
                 But this is what makes him so funny:<br />
                 If you give him a smile,<br />
@@ -48,36 +48,44 @@
             <!-- <button onclick="nextChallenge()">Replace document</button> -->
 
             <form onsubmit="return checkAnswer()">
-                Answer: <input type="text" id="answer_1" size="20" name="answer_1"><br>
-                <input type="submit" value="Submit"> 
+                <label for="answer_1">Answer:</label>
+                <input type="text" id="answer_1" size="20" name="answer_1"><br>
+                <input class="btn" type="submit" value="Submit"> 
             </form>
+
+            <p id="answer_message">
+                You have entered </p>
+
+    <script>
+    window.addEventListener("load", function () {      
+          var answer_message = document.getElementById("answer_message");
+          var x = document.getElementById("answer_1").value;
+          answer_message.innerHTML = "<u>FOO</u> <i>BAR</i>"x;
+        });
+        </script>
                     
             <script>
-                function sr_instructions() {
-                    location.replace("01_sr_instructions.html");
-                }
-                
-
-                function nextChallenge() {
-                    location.replace("03_sr_challenge.html");
-                }
-
-                function wrongAnswer() {
-                    document.write("Your answer was incorrect [",x,"]");
-                    location.replace("fail_page.html");
-                }
-
+                // function sr_instructions() {
+                //     window.location.replace("01_sr_instructions.html");
+                // }
+                // function nextChallenge() {
+                //     window.location.replace("03_sr_challenge.html");
+                // }
+                // function wrongAnswer() {
+                //     document.write("Your answer was incorrect [",x,"]");
+                //     window.location.replace("fail_page.html");
+                // }
                 function checkAnswer() {
                     console.log("If you are reading this you are cheating and might as well go and do something else with your time");
                     console.log("Answer [",answer_1,"]");
                     var x = document.getElementById("answer_1").value;
                     if ( x != "Smile") {
-                        document.write("Your answer was incorrect [",x,"]");
-                        location.replace("fail_page.html");
-                        // wrongAnswer();
+                        // document.write("Your answer was incorrect [",x,"]");
+                        window.location.href="fail_page.html";
+                        // return wrongAnswer();
                     } else {
-                        document.write("Your answer was Correct[",x,"]");  
-                        location.replace("03_sr_challenge.html");
+                        // document.write("Your answer was Correct[",x,"]");  
+                        window.location.replace("03_sr_challenge.html");
                         // return nextChallenge();
                     }
                 }
@@ -85,7 +93,7 @@
         </main>
 
         <footer>
-            <button onclick="sr_instructions()">Screen Reader Instructions</button>
+            <button class="btn" onclick="sr_instructions()">Screen Reader Instructions</button>
         </footer>       
     </body>
 </html>
