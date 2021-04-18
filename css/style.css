@@ -7,8 +7,11 @@ html,body, a {
   text-align:center
 }
 
-.hidden-text {
-  color: rgb(2, 87, 87);  
+.nav {
+  text-align:left;
+  padding-right: 100px;
+  color: green;
+  padding: 0.5rem;
 }
 
 .curved {
@@ -16,17 +19,29 @@ html,body, a {
 }
 
 div.boxed {
-  border-color: aliceblue;
+  font-size: larger;
+  /* border-color: aliceblue; */
+  border: dashed 2px #78909C;
+  border-radius: 10px;
   border-style: solid;
-  padding: 10px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
 }
 
-div.ex1 {
-  border-style: solid;
-  border-color: #0000ff;
-  width: 50%;
-  position: center;
+.menu {
+  margin-left: auto;
 }
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Fade  */
 
 .fade-in-10s {
     animation: fadeIn ease 10s;

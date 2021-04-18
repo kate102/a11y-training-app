@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="../../css/style.css">
     </head>
     <body>
-        <nav>
-            <a href="../../index.html">Home</a>            
+        <nav class="menu">
+            <a  href="../../index.html">Home</a> 
+            <a  href="01_sr_instructions.html">Screen Reader Instructions</a>       
         </nav>
 
         <main role="main">
@@ -19,18 +20,19 @@
                 In this challenge you need to answer a simple question.
             </p>
             <p>The first verse is visable but none of the others are. <br />
-            So you will need to use the screen reader in order to find out the answer.</p>
+            You will need to use the screen reader in order to find out the answer.</p>
 
             <div class="boxed">
-
-
-            Jonathan Jo<br />
-            Has a mouth like an 'O'<br />  
-            And a wheelbarrow full of surprises<br />
-            If you ask for a bat,<br />     
-            or something like that,<br />
-            He has got it, whatever the size is.
-        </div>
+                <!-- <div class="clear-box"></div> -->
+                <div>
+                Jonathan Jo<br />
+                Has a mouth like an 'O'<br />  
+                And a wheelbarrow full of surprises<br />
+                If you ask for a bat,<br />     
+                or something like that,<br />
+                He has got it, whatever the size is.
+            </div>
+            </div>
             <div hidden="true">
                 <!-- If you are reading this you are cheating and might as well go and do something else with your time -->
                 <p>If you're wanting a ball,<br />
@@ -69,35 +71,23 @@
         </script>
                     
             <script>
-                // function sr_instructions() {
-                //     window.location.replace("01_sr_instructions.html");
-                // }
-                // function nextChallenge() {
-                //     window.location.replace("03_sr_challenge.html");
-                // }
-                // function wrongAnswer() {
-                //     document.write("Your answer was incorrect [",x,"]");
-                //     window.location.replace("fail_page.html");
-                // }
                 function checkAnswer() {
                     console.log("If you are reading this you are cheating and might as well go and do something else with your time");
                     console.log("Answer [",answer_1,"]");
                     var x = document.getElementById("answer_1").value;
                     if ( x != "Smile") {
-                        // document.write("Your answer was incorrect [",x,"]");
+                        document.write("");
                         window.location.href="fail_page.html";
-                        // return wrongAnswer();
                     } else {
-                        // document.write("Your answer was Correct[",x,"]");  
+                        document.write("");  
                         window.location.replace("03_sr_challenge.html");
-                        // return nextChallenge();
                     }
                 }
             </script>
         </main>
 
-        <footer>
+        <!-- <footer>
             <button class="curved" onclick="sr_instructions()">Screen Reader Instructions</button>
-        </footer>       
+        </footer>        -->
     </body>
 </html>
