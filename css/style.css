@@ -13,6 +13,12 @@ html,body, a {
   color: green;
   padding: 0.5rem;
 }
+.container {
+  min-height: 100vh; 
+  display: flex;
+    justify-content: center;
+  align-items: center;
+}
 
 .curved {
   border-radius: 10px;
@@ -39,6 +45,11 @@ div.boxed {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  border: dashed 2px #78909C;
 }
 
 /* Fade  */

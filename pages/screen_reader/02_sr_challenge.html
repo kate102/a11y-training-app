@@ -21,17 +21,14 @@
             </p>
             <p>The first verse is visable but none of the others are. <br />
             You will need to use the screen reader in order to find out the answer.</p>
-
+              
             <div class="boxed">
-                <!-- <div class="clear-box"></div> -->
-                <div>
                 Jonathan Jo<br />
                 Has a mouth like an 'O'<br />  
                 And a wheelbarrow full of surprises<br />
                 If you ask for a bat,<br />     
                 or something like that,<br />
                 He has got it, whatever the size is.
-            </div>
             </div>
             <div hidden="true">
                 <!-- If you are reading this you are cheating and might as well go and do something else with your time -->
@@ -51,7 +48,6 @@
             </div>
 
             <h2>Question: What do you have to give Jonathan Jo?</h2>
-            <!-- <button onclick="nextChallenge()">Replace document</button> -->
 
             <form onsubmit="return checkAnswer()">
                 <label for="answer_1">Answer:</label>
@@ -61,14 +57,6 @@
 
             <p id="answer_message">
                 You have entered </p>
-
-    <script>
-    window.addEventListener("load", function () {      
-          var answer_message = document.getElementById("answer_message");
-          var x = document.getElementById("answer_1").value;
-          answer_message.innerHTML = "<u>FOO</u> <i>BAR</i>"x;
-        });
-        </script>
                     
             <script>
                 function checkAnswer() {
