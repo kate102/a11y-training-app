@@ -1,13 +1,58 @@
 /* Main Styling */
-html,body {
+html,body, a {
   font-family: 'Open Sans','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
+  background-color: rgb(2, 87, 87);
+  color: aliceblue;
+  text-align:center
 }
 
-.hidden-text {
-  color: aliceblue;
-  
+.nav {
+  text-align:left;
+  padding-right: 100px;
+  color: green;
+  padding: 0.5rem;
 }
+.container {
+  min-height: 100vh; 
+  display: flex;
+    justify-content: center;
+  align-items: center;
+}
+
+.curved {
+  border-radius: 10px;
+}
+
+div.boxed {
+  font-size: larger;
+  /* border-color: aliceblue; */
+  border: dashed 2px #78909C;
+  border-radius: 10px;
+  border-style: solid;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  border: dashed 2px #78909C;
+}
+
+/* Fade  */
 
 .fade-in-10s {
     animation: fadeIn ease 10s;

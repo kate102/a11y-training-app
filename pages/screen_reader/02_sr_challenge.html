@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="> -->
         <title>A11y Training App - Screen Reader 1</title>
         <link rel="stylesheet" href="../../css/style.css">
     </head>
     <body>
-        <nav>
-            <a href="../../index.html">Home</a>            
+        <nav class="menu">
+            <a  href="../../index.html">Home</a> 
+            <a  href="01_sr_instructions.html">Screen Reader Instructions</a>       
         </nav>
 
         <main role="main">
@@ -20,16 +20,17 @@
                 In this challenge you need to answer a simple question.
             </p>
             <p>The first verse is visable but none of the others are. <br />
-            So you will need to use the screen reader in order to find out the answer.</p>
-            <h2>Question: What do you have to give Jonathan Jo?</h2>
-            <p>Jonathan Jo<br />
-            Has a mouth like an 'O'<br />  
-            And a wheelbarrow full of surprises<br />
-            If you ask for a bat,<br />     
-            or something like that,<br />
-            He has got it, whatever the size is.</p>
-
-            <div class="hidden-text">
+            You will need to use the screen reader in order to find out the answer.</p>
+              
+            <div class="boxed">
+                Jonathan Jo<br />
+                Has a mouth like an 'O'<br />  
+                And a wheelbarrow full of surprises<br />
+                If you ask for a bat,<br />     
+                or something like that,<br />
+                He has got it, whatever the size is.
+            </div>
+            <div hidden="true">
                 <!-- If you are reading this you are cheating and might as well go and do something else with your time -->
                 <p>If you're wanting a ball,<br />
                 It's no trouble at all;<br />
@@ -38,37 +39,43 @@
                 And a watch that won't stop,<br />
                 And some sweets, and an Aberdeen terrier.</p>
                 
-                <p>Jonathan Jo<br />
+                <p aria-hidden="true">Jonathan Jo<br />
                 Has a mouth like an "O,"<br />
                 But this is what makes him so funny:<br />
                 If you give him a smile,<br />
                 Only once in a while,<br />
                 Then he never expects any money!</p>
             </div>
-            <form onsubmit="return myFunction()">
-                Answer: <input type="text" id="answer_1" size="20" name="answer_1"><br><br>
-                <input type="submit" value="Submit"> 
+
+            <h2>Question: What do you have to give Jonathan Jo?</h2>
+
+            <form onsubmit="return checkAnswer()">
+                <label for="answer_1">Answer:</label>
+                <input class="curved" type="text" id="answer_1" size="20" name="answer_1"><br>
+                <input class="curved" type="submit" value="Submit"> 
             </form>
+
+            <p id="answer_message">
+                You have entered </p>
                     
             <script>
-                function myFunction() {
+                function checkAnswer() {
                     console.log("If you are reading this you are cheating and might as well go and do something else with your time");
-
-                var x = document.getElementById("answer_1").value;
-                if ( answer_1 != "Smile") {
-                    document.write("Your answer was incorrect");
+                    console.log("Answer [",answer_1,"]");
+                    var x = document.getElementById("answer_1").value;
+                    if ( x != "Smile") {
+                        document.write("");
+                        window.location.href="fail_page.html";
+                    } else {
+                        document.write("");  
+                        window.location.replace("03_sr_challenge.html");
+                    }
                 }
-            }
-
             </script>
-            <br />
-            <a href="02_sr_challenge_1.html">Second Challenge</a>
-
         </main>
 
-        <footer>
-
-            <a href="01_sr_instructions.html">Screen Reader Instructions</a>
-        </footer>       
+        <!-- <footer>
+            <button class="curved" onclick="sr_instructions()">Screen Reader Instructions</button>
+        </footer>        -->
     </body>
 </html>
