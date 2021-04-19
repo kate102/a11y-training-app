@@ -82,6 +82,7 @@ div.boxed {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .flex-grid .row {
   display: flex;
   flex-wrap: wrap; 
