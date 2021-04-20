@@ -7,6 +7,15 @@ html,body, a {
   text-align:center
 }
 
+ul {
+  list-style-type: none;
+}
+
+h1, h2 {
+  padding-top: 50px;
+  font-weight: 300;
+  line-height: 1.2;
+}
 .nav {
   text-align:left;
   padding-right: 100px;
