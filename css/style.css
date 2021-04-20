@@ -11,8 +11,13 @@ ul {
   list-style-type: none;
 }
 
-h1, h2 {
+h1 {
   padding-top: 50px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+h2 {
+  padding-top: 20px;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -42,7 +47,6 @@ h1, h2 {
   border-bottom: aliceblue 2px solid;
 }
 
-
 .navbar ul {
   display: flex;
 }
@@ -50,7 +54,7 @@ h1, h2 {
 .container {
   min-height: 100vh; 
   display: flex;
-    justify-content: center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -80,10 +84,25 @@ div.boxed {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.container {
+
+.flex-grid .row {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0, 4px;
+}
+
+/* 4 Columns */
+.flex-grid .column {
+  display: flex;
+  max-width: 25%;
+  padding: 0;
+}
+
+.flex-items {
+  display: flex;
+  text-align: center;
   justify-content: center;
-  border: dashed 2px #78909C;
+  height: 100%;
 }
 
 /* Fade  */
