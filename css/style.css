@@ -115,7 +115,17 @@ div.boxed {
     -ms-animation: fadeIn ease 10s;
 
   }
-  .fade-in-delay {
+
+  .fade-in-delay10s {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+    animation-delay:2.5s;
+  } 
+
+  .fade-in-delay30s {
     animation: fadeIn ease 30s;
     -webkit-animation: fadeIn ease 30s;
     -moz-animation: fadeIn ease 30s;
