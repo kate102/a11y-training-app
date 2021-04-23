@@ -169,6 +169,14 @@ div.boxed {
   height: 100%;
 }
 
+.box-flex {
+  border: 3px solid green;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+
 /* Fade  */
 
 .fade-in-10s {
