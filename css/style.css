@@ -1,7 +1,13 @@
 /* Main Styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html,body, a {
   font-family: 'Open Sans','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.7em;
+  line-height: 1.7;
   background-color: rgb(2, 87, 87);
   color: aliceblue;
   text-align:center
@@ -16,11 +22,52 @@ h1 {
   font-weight: 300;
   line-height: 1.2;
 }
-h2 {
+
+p {
+  margin: 10px 0;
+}
+
+.center {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1.title {
+  /* color: green; */
+  font-size: xx-large;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* h2 {
   padding-top: 20px;
   font-weight: 300;
   line-height: 1.2;
-}
+} */
 
 .navbar {
   display: flex;
