@@ -61,9 +61,14 @@
                     console.log("If you are reading this you are cheating and might as well go and do something else with your time");
                     console.log("Answer [",answer,"]");
                     var x = document.getElementById("answer").value;
+                    localStorage.setItem("answer", x);
+                    localStorage.setItem("lastPage", "01_challenge.html");
+                    
                     if ( x != "Smile") {
                         document.write("");
+                        localStorage.setItem("storageName",x);
                         window.location.href="01_fail.html";
+
                     } else {
                         document.write("");  
                         window.location.replace("01_success.html");
