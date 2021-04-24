@@ -8,11 +8,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div id="navbar" class="navbar" role="navigation">
-            <ul>
-                <a href="/pages/intro/the_facts.html">Start</a> 
-            </ul>
-        </div>
         <main>
             <header>
                 <div class="center">
@@ -20,6 +15,15 @@
                     <h2>Education Through Experience</h2>
                 </div>
             </header>
-        </main>     
+        </main>    
+        <footer class="space50">
+            <button  id="nextButton" class="btn">Start</button>
+        </footer>
+    
+        <script type="text/javascript">
+            document.getElementById("nextButton").onclick = function () {
+                location.href = "/pages/intro/the_facts.html";
+            };
+        </script> 
     </body>
 </html>

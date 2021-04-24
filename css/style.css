@@ -30,6 +30,9 @@ p {
   background-color: lightgrey;
   padding: 10px; 
   border-radius: 10px;
+  position:absolute;
+  bottom: 5%;
+  right:50%;  
 }
 
 .space50 {
