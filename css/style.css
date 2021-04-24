@@ -42,6 +42,10 @@ p {
   padding-top: 50px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .center {
   line-height: 200px;
   height: 200px;
@@ -114,7 +118,7 @@ h2 {
   justify-content: space-between;
   /* text-align:left; */
   /* padding-right: 100px; */
-  color: aliceblue;
+  /* color: aliceblue; */
   width: 100%;
   height: 70px;
   top: 0px;
@@ -123,7 +127,7 @@ h2 {
 }
 
 .navbar a {
-  color: aliceblue;
+  /* color: aliceblue; */
   padding: 10px 20px;
   margin: 0 5px;
   text-decoration: none;
