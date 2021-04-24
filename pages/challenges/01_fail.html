@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A11y Training App - Screen Reader 1</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <div id="navbar" class="navbar" role="navigation">
+            <ul>
+                <a href="../../index.html">Home</a>
+                <a  href="../intro/tools.html">Tools</a>     
+            </ul>
+        </div>
+
+        <main role="main">
+            <h1 class="heading-font space50">Wrong!</h1>
+            <h2 class="padding20">Sorry but you have to return to the last challenge</h2>
+
+        </main>
+        <footer class="space50">
+            <button  id="nextButton" class="btn">Last Challenge</button>
+        </footer>
+    
+        <script type="text/javascript">
+            document.getElementById("nextButton").onclick = function () {
+                location.href = "../challenges/01_challenge.html";
+            };
+        </script>
+    </body>
+</html>
