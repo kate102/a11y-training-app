@@ -26,6 +26,18 @@ h1 {
 p {
   margin: 10px 0;
 }
+.btn {
+  background-color: lightgrey;
+  padding: 10px; 
+  border-radius: 10px;
+}
+
+.space50 {
+  padding-top: 50px;
+}
+.space20 {
+  padding-top: 50px;
+}
 
 .center {
   line-height: 200px;
@@ -183,9 +195,10 @@ div.boxed {
   position: relative;
   margin: 1%;
   width: 23%;
-  height: 400px;
-  background-color: lightgrey;  padding: 10px;
-  border-radius: 10%;
+  height: 150px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 10px;
   text-align: center;
 }
 

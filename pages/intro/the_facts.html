@@ -10,56 +10,40 @@
     <div id="navbar" class="navbar" role="navigation">
         <ul>
             <a href="../../index.html">Home</a> 
-            <a href="../pages/screen_reader/02_sr_challenge.html">Screen Reader Challenge</a>    
+            <!-- <a href="../pages/screen_reader/02_sr_challenge.html">Screen Reader Challenge</a>     -->
         </ul>
     </div>
 
-    <main id="main" role="main">
-
-        <!-- <h1>Walk In Their Shoes</h1>
-        <h2>Education Through Experience</h2> -->
-
-        <!-- <div class="center">     -->
-        <!-- <div class="fade-in-delay10s"> -->
-        <h2 class="heading-font">Facts</h2>
-        <section id="facts">
-            <!-- <div class="row"> -->
-                <div class="column flex-items box-text">
+    <main id="main" role="main" class="space50">
+        <h2 class="heading-font space50">Facts</h2>
+        <section id="facts" class="space50">
+            <div class="column flex-items box-text">
                 <div class="box-flex" >
                     <p>Assistive technology users will simply leave the site if the hurdles become too arduos.</p>
                 </div>
                 <div class="box-flex" >          
                     <p>Assistive technology only fails when the underlying code isn't written properly.</p>
                 </div>
+            </div>
+        </div>
+            <div class="column flex-items box-text">
                 <div class="box-flex" >  
-                   <p>Implementing accessibility enablement is straight forward if you do it from the beginning.</p>
+                    <p>Implementing accessibility enablement is straight forward if you do it from the beginning.</p>
                 </div>
                 <div class="box-flex" >  
                     <p>Many developers don't realise the implications of the coding decisions that they take when it comes to assistive technology.</p>
                 </div>
-            <!-- </div> -->
-        </div>
-    </section>
-            <!-- </div> -->
-    <!-- </div> -->
-        <!-- <div class="fade-in-delay30s">
-            <h2>The Challenge</h2>
-            <p>This site is made up of a series of pages, to get to each page you have to have completed the previous challenge.<br/>
-                The challenges are initially about using aassistive technology to answer simple questions. <br />
-                As you go through the site the challenges become more compelx as the underlying HTML5 is used incorrectly.
-            </p>
-            <p>At any point you can give up on the site, that will be the point at which we lose users on our site.</p>
-        </div> -->
-        <!-- <section id="cases" class="cases flex-grid section-padding">
-            <header class="section-header">
-                <h4>This is what we do</h4>
-                <h2>Business Cases</h2>
-                <p2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptas!
-                </p2>
-            </header>
-        </section> -->
-
-        <!-- <p>When will you give up?</p>            -->
+            </div>
+        </section>
     </main> 
-</body>
+    <footer class="space50">
+        <button  id="nextButton" class="btn">Next</button>
+    </footer>
+
+    <script type="text/javascript">
+        document.getElementById("nextButton").onclick = function () {
+            location.href = "the_challenge.html";
+        };
+    </script>
+    </body>
 </html>
