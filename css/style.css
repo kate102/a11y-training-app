@@ -240,7 +240,10 @@ div.boxed {
   color: rgb(2, 87, 87);
 }
 
-
+span {
+  color: black;
+  font-weight: bold;
+}
 
 
 /* Fade  */
