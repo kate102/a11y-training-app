@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A11y Training App - Screen Reader 1</title>
+        <link rel="stylesheet" href="../../css/style.css"></head>
+    </head>
+    <body>
+        <div id="navbar" class="navbar" role="navigation">
+            <a href="../../index.html">Home</a>
+        </div>
+
+        <main id="main" role="main" class="space50">
+            <h1 class="heading-font space50">Tools</h1>
+                <section id="tools" class="space50">
+                    <h2 class="padding20">Screen Reader</h2>
+
+                    <div class="column flex-items box-text">
+                        <div class="box-flex2" >
+                            <ol>
+                                <li>If your Mac has Touch ID, quickly press Touch ID three times</li>
+                                <li>If not, then go to Settings and click on Accessibility</li>
+                                <li>Enable Voice Over</li>
+                                <li>Close Setting</li>
+                            </ol>
+                            <p>To Start - Simultaneously press fn, command and f5</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </main> 
+        <footer class="space50">
+            <button  id="nextButton" class="btn">Start</button>
+        </footer>
+    
+        <script type="text/javascript">
+            document.getElementById("nextButton").onclick = function () {
+                location.href = "sr_instructions.html";
+            };
+        </script>
+    </body>
+</html>

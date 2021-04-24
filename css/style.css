@@ -108,7 +108,12 @@ h2 {
   font-weight: 300;
   font-size: 200%;
   line-height: 1.7;
-  /* color: green; */
+}
+h2.padding20 {
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 200%;
+  line-height: 1.7;
 }
 
  /* Nav Bar */
@@ -116,9 +121,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* text-align:left; */
-  /* padding-right: 100px; */
-  /* color: aliceblue; */
   width: 100%;
   height: 70px;
   top: 0px;
@@ -127,7 +129,6 @@ h2 {
 }
 
 .navbar a {
-  /* color: aliceblue; */
   padding: 10px 20px;
   margin: 0 5px;
   text-decoration: none;
@@ -203,6 +204,20 @@ div.boxed {
   margin: 1%;
   width: 23%;
   height: 150px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box-flex2 {
+  border: 3px solid green;
+  justify-content: space-between;
+  display: inline-block;
+  position: relative;
+  margin: 1%;
+  width: 23%;
+  height: 300px;
   background-color: lightgrey;
   padding: 10px;
   border-radius: 10px;
