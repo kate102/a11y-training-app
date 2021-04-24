@@ -16,20 +16,22 @@
         </div>
 
         <main role="main">
-            <h1>Screen Reader Challenge 1</h1>
-            <h2>Your challenge is to use the screen reader to answer a simple question:</h2>
+            <h1 class="heading-font space50">Challenge 1</h1>
+            <h2 class="padding20">Your challenge is to use the screen reader to answer a simple question:</h2>
             <p>Jonathan Jo is one of my favorite poems by A. A. Milne </p>
             <p>The first verse is visable but none of the others are.</p>
               
-            <div class="flex-items">
-                <div class="boxed">
-                Jonathan Jo<br />
-                Has a mouth like an 'O'<br />  
-                And a wheelbarrow full of surprises<br />
-                If you ask for a bat,<br />     
-                or something like that,<br />
-                He has got it, whatever the size is.
-            </div>
+            <!-- <div class="column flex-items box-text">
+                <div class="box-flex2" > -->
+            <div class="flex-items box-text">
+                <div class=" box-flex box-size200">
+                    Jonathan Jo<br />
+                    Has a mouth like an 'O'<br />  
+                    And a wheelbarrow full of surprises<br />
+                    If you ask for a bat,<br />     
+                    or something like that,<br />
+                    He has got it, whatever the size is.
+                </div>
             </div>
             <div hidden="true">
                 <!-- If you are reading this you are cheating and might as well go and do something else with your time -->
@@ -48,22 +50,17 @@
                 Then he never expects any money!</p>
             </div>
 
-            <h2>Question: What do you have to give Jonathan Jo?</h2>
-
             <form onsubmit="return checkAnswer()">
-                <label for="answer_1">Answer:</label>
-                <input class="curved" type="text" id="answer_1" size="20" name="answer_1"><br>
-                <input class="curved" type="submit" value="Submit"> 
+                <label for="answer">Question: What do you have to give Jonathan Jo?   </label>
+                <input class="answer" type="text" id="answer" size="20" name="answer"><br>
+                <input class="btn" type="submit" value="Submit"> 
             </form>
-
-            <p id="answer_message">
-                You have entered </p>
                     
             <script>
                 function checkAnswer() {
                     console.log("If you are reading this you are cheating and might as well go and do something else with your time");
-                    console.log("Answer [",answer_1,"]");
-                    var x = document.getElementById("answer_1").value;
+                    console.log("Answer [",answer,"]");
+                    var x = document.getElementById("answer").value;
                     if ( x != "Smile") {
                         document.write("");
                         window.location.href="fail_page.html";
@@ -74,6 +71,15 @@
                 }
             </script>
         </main>
+        <!-- <footer class="space50">
+            <button  id="nextButton" class="btn">First Challenge</button>
+        </footer>
+    
+        <script type="text/javascript">
+            document.getElementById("nextButton").onclick = function () {
+                location.href = "../challenges/01_challenge.html";
+            };
+        </script> -->
 
         <!-- <footer>
             <button class="curved" onclick="sr_instructions()">Screen Reader Instructions</button>

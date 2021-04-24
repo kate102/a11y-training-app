@@ -32,7 +32,15 @@ p {
   border-radius: 10px;
   position:absolute;
   bottom: 5%;
-  right:50%;  
+  right:20%;  
+}
+.answer {
+  background-color: lightgrey;
+  padding: 10px; 
+  border-radius: 10px;
+  position:relative;
+  bottom: 5%;
+  /* right:50%;   */
 }
 
 .space50 {
@@ -222,6 +230,10 @@ div.boxed {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
+}
+/* KM Needs to be tidied up  */
+.box-size200{
+  height: 200px;
 }
 
 .box-text {
