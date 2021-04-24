@@ -59,6 +59,13 @@ h1.title-font {
   color: aliceblue;
 }
 
+.heading-font {
+  /* color: green; */
+  font-size: 300%;
+  font-weight: 400;
+  line-height: 1.7;
+  color: aliceblue;
+}
 
 .hero {
   position: relative;
@@ -172,9 +179,21 @@ div.boxed {
 .box-flex {
   border: 3px solid green;
   justify-content: space-between;
-  padding: 10px;
-
+  display: inline-block;
+  position: relative;
+  margin: 1%;
+  width: 23%;
+  height: 400px;
+  background-color: lightgrey;  padding: 10px;
+  border-radius: 10%;
+  text-align: center;
 }
+
+.box-text {
+  color: rgb(2, 87, 87);
+}
+
+
 
 
 /* Fade  */
