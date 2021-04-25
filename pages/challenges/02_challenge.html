@@ -11,18 +11,18 @@
         <div id="navbar" class="navbar" role="navigation">
             <ul>
                 <a href="../../index.html">Home</a>
-                <a  href="01_sr_instructions.html">Screen Reader Instructions</a>     
+                <a  href="../intro/tools.html">Tools</a>     
             </ul>
         </div>
 
         <main role="main">
-            <h1 class="heading-font space50">Challenge 2</h1>
-            <!-- <h2 class="padding20">Your challenge is to use the screen reader to answer a simple question:</h2>
-            <p>Jonathan Jo is one of my favorite poems by A. A. Milne </p>
-            <p>The first verse is visable but none of the others are.</p>
+            <h1 class="heading-font space50">Screen Reader Second Challenge</h1>
+            <h2 class="padding20">Your challenge is to use the screen reader to interpret images</h2>
+            <p>The use of alt text to describe images that convey meaning is very important</p>
+            <p>the meaning should be unambigous and sufficiently detailed.</p>
               
-            <!-- <div class="column flex-items box-text">
-                <div class="box-flex2" > -->
+            <div class="column flex-items box-text">
+                <!-- <div class="box-flex2" > -->
             <!-- <div class="flex-items box-text">
                 <div class=" box-flex box-size200">
                     Jonathan Jo<br />
@@ -32,56 +32,42 @@
                     or something like that,<br />
                     He has got it, whatever the size is.
                 </div>
-            </div>
-            <div hidden="true">
-                <p>If you're wanting a ball,<br />
-                It's no trouble at all;<br />
-                Why, the more that you ask for, the merrier -<br />
-                Like a hoop and a top,<br />
-                And a watch that won't stop,<br />
-                And some sweets, and an Aberdeen terrier.</p>
-                
-                <p>Jonathan Jo<br />
-                Has a mouth like an "O,"<br />
-                But this is what makes him so funny:<br />
-                If you give him a smile,<br />
-                Only once in a while,<br />
-                Then he never expects any money!</p>
-            </div>
+            </div> -->
 
-            <form onsubmit="return checkAnswer()">
-                <label for="answer">Question: What do you have to give Jonathan Jo?   </label>
+             <form onsubmit="return checkAnswer()">
+                <label for="answer">Question: Where did I go on holiday?</label>
                 <input class="answer" type="text" id="answer" size="20" name="answer"><br>
                 <input class="btn" type="submit" value="Submit"> 
             </form>
-                    
+
+            <footer class="space50">
+                <button  id="quitButton" class="quit-btn">Quit</button>
+            </footer>
+
+            <script type="text/javascript">
+                localStorage.setItem("lastChallengeName", "Screen Reader Second Challenge.");
+                document.getElementById("quitButton").onclick = function () {
+                    location.href = "/pages/intro/quit_page.html";
+                };
+            </script> 
+
             <script>
                 function checkAnswer() {
                     console.log("If you are reading this you are cheating and might as well go and do something else with your time");
-                    console.log("Answer [",answer,"]");
-                    var x = document.getElementById("answer").value;
-                    if ( x != "Smile") {
+                    var answer = document.getElementById("answer").value;
+                    localStorage.setItem("answer", answer);
+                    localStorage.setItem("lastChallenge", "../challenges/02_challenge.html");
+
+                    if ( answer != "Smile") {
                         document.write("");
-                        window.location.href="fail_page.html";
+                        window.location.href="../intro/fail_page.html";
+
                     } else {
                         document.write("");  
-                        window.location.replace("01_result.html");
+                        window.location.replace("01_success.html");
                     }
                 }
-            </script> --> -->
+            </script>
         </main>
-        <!-- <footer class="space50">
-            <button  id="nextButton" class="btn">First Challenge</button>
-        </footer>
-    
-        <script type="text/javascript">
-            document.getElementById("nextButton").onclick = function () {
-                location.href = "../challenges/01_challenge.html";
-            };
-        </script> -->
-
-        <!-- <footer>
-            <button class="curved" onclick="sr_instructions()">Screen Reader Instructions</button>
-        </footer>        -->
     </body>
 </html>

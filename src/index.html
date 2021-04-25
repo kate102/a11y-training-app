@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A11y Training App</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main role="main">
+            <header>
+                <div class="center">
+                    <h1 class="title-font">Walk In Their Shoes</h1>
+                    <h2>Education Through Experience</h2>
+                </div>
+            </header>
+        </main>    
+        <footer class="space50">
+            <button id="nextButton" class="btn" data-testid="button">Start</button>
+        </footer>
+    
+        <script type="text/javascript">
+            localStorage.setItem("lastChallengeName", "Index Page.");
+
+            document.getElementById("nextButton").onclick = function () {
+                location.href = "/pages/intro/the_facts.html";
+            };
+        </script> 
+    </body>
+</html>
