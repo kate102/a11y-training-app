@@ -15,15 +15,11 @@ describe('index.html', () => {
     //   // This is indeed dangerous and should only be done with trusted content.
     //   // https://github.com/jsdom/jsdom#executing-scripts
       dom = new JSDOM(html, { runScripts: 'dangerously' })
-      // dom = new JSDOM('html', { url: 'https://localhost' });
       container = dom.window.document.body;
     })
     it('renders a heading element', () => {
-      console.log("Well what do we have?",container.querySelector('h1'));
         expect(container.querySelector('h1')).not.toBeNull()
-        // expect(getByText(container, 'Walk In Their Shoes')).toBeInTheDocument()
-        // expect(getByText('button')).not.toBeDisabled();
-
+        expect(getByText(container, 'Walk In Their Shoes')).toBeInTheDocument()
       })
     
       // it('renders a button element', () => {
