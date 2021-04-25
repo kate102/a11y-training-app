@@ -55,19 +55,28 @@
                 <input class="answer" type="text" id="answer" size="20" name="answer"><br>
                 <input class="btn" type="submit" value="Submit"> 
             </form>
-                    
+
+            <footer class="space50">
+                <button  id="quitButton" class="quit-btn">Quit</button>
+            </footer>
+
+            <script type="text/javascript">
+                localStorage.setItem("lastChallengeName", "Screen Reader First Challenge.");
+                document.getElementById("quitButton").onclick = function () {
+                    location.href = "/pages/intro/quit_page.html";
+                };
+            </script> 
+
             <script>
                 function checkAnswer() {
                     console.log("If you are reading this you are cheating and might as well go and do something else with your time");
-                    console.log("Answer [",answer,"]");
-                    var x = document.getElementById("answer").value;
-                    localStorage.setItem("answer", x);
-                    localStorage.setItem("lastPage", "01_challenge.html");
-                    
-                    if ( x != "Smile") {
+                    var answer = document.getElementById("answer").value;
+                    localStorage.setItem("answer", answer);
+                    localStorage.setItem("lastChallenge", "../challenges/01_challenge.html");
+
+                    if ( answer != "Smile") {
                         document.write("");
-                        localStorage.setItem("storageName",x);
-                        window.location.href="01_fail.html";
+                        window.location.href="../intro/fail_page.html";
 
                     } else {
                         document.write("");  
