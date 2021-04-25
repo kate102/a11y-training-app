@@ -14,8 +14,8 @@ describe('index.html', () => {
     //   // to getting the code in the script tag to execute.
     //   // This is indeed dangerous and should only be done with trusted content.
     //   // https://github.com/jsdom/jsdom#executing-scripts
-      // dom = new JSDOM(html, { runScripts: 'dangerously' })
-      dom = new JSDOM('', { url: 'https://localhost' });
+      dom = new JSDOM(html, { runScripts: 'dangerously' })
+      // dom = new JSDOM('html', { url: 'https://localhost' });
       container = dom.window.document.body;
     })
     it('renders a heading element', () => {
