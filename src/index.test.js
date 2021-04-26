@@ -18,10 +18,14 @@ describe('index.html', () => {
       container = dom.window.document.body;
     })
     it('renders a heading element', () => {
-        expect(container.querySelector('h1')).not.toBeNull()
-        expect(getByText(container, 'Walk In Their Shoes')).toBeInTheDocument()
-      })
-    
+      expect(container.querySelector('h1')).not.toBeNull();
+      expect(container.querySelector('h2')).not.toBeNull();
+    })
+    it('content is correct', () => {
+      expect(getByText(container, 'Walk In Their Shoes')).toBeInTheDocument();
+      expect(getByText(container, 'Education Through Experience')).toBeInTheDocument();
+    })
+  
       // it('renders a button element', () => {
       //   expect(container.querySelector('button')).not.toBeNull()
       //   expect(getByText(container, 'Click me for a terrible pun')).toBeInTheDocument()
