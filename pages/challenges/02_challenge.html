@@ -16,26 +16,31 @@
         </div>
 
         <main role="main">
-            <h1 class="heading-font space50">Screen Reader Second Challenge</h1>
-            <h2 class="padding20">Your challenge is to use the screen reader to interpret images</h2>
-            <p>The use of alt text to describe images that convey meaning is very important</p>
-            <p>the meaning should be unambigous and sufficiently detailed.</p>
-              
-            <div class="column flex-items box-text">
-                <!-- <div class="box-flex2" > -->
-            <!-- <div class="flex-items box-text">
-                <div class=" box-flex box-size200">
-                    Jonathan Jo<br />
-                    Has a mouth like an 'O'<br />  
-                    And a wheelbarrow full of surprises<br />
-                    If you ask for a bat,<br />     
-                    or something like that,<br />
-                    He has got it, whatever the size is.
-                </div>
-            </div> -->
+            <h1 class="heading-font space50">The Homophone Challenge</h1>
+            <h2 class="padding20">Homophone:
+            each of two or more words having the same pronunciation <br />
+            but different meanings, origins, or spelling, 
+                for example new and knew.</h2>
 
-             <form onsubmit="return checkAnswer()">
-                <label for="answer">Question: Where did I go on holiday?</label>
+            <h3>My Favourite Hydra</h3>
+            <div class="flex-items box-text">
+                <!-- <div class="box-flex"> -->
+                <img label="Image 1" src="../../assets/blank_hydra.png" alt="A picture of Hydra">
+            </div>
+            <ol>
+                <li>1. Hydra is one of the Saronic Islands of Greece, located in the Aegean Sea.</li>
+                <li>2. Hydra is the second studio album by American rock band Toto.</li>
+                <li>3. Hydra is a steel Floorless Coaster at Dorney Park & Wildwater Kingdom in Allentown, Pennsylvania, United States.</li>
+                <li>4. Hydra is the largest of the 88 modern constellations, measuring 1303 square degrees, and also the longest at over 100 degrees.</li>
+                <li>5. Hydra is a genus of small, fresh-water organisms of the phylum Cnidaria and class Hydrozoa. <br /> 
+                    Biologists are especially interested in Hydra because of their regenerative ability – they do not appear to die of old age, or to age at all.</li>
+            </ol>
+            <br />
+        </main>
+
+
+            <form onsubmit="return checkAnswer()">
+                <label for="answer">Question: Based on the alt text, which Hydra do these images refer to?</label>
                 <input class="answer" type="text" id="answer" size="20" name="answer"><br>
                 <input class="btn" type="submit" value="Submit"> 
             </form>
@@ -45,7 +50,7 @@
             </footer>
 
             <script type="text/javascript">
-                localStorage.setItem("lastChallengeName", "Screen Reader Second Challenge.");
+                localStorage.setItem("lastChallengeName", "The Homophone Challenge");
                 document.getElementById("quitButton").onclick = function () {
                     location.href = "/pages/intro/quit_page.html";
                 };
@@ -58,16 +63,16 @@
                     localStorage.setItem("answer", answer);
                     localStorage.setItem("lastChallenge", "../challenges/02_challenge.html");
 
-                    if ( answer != "Smile") {
+                    if ( answer != "1") {
                         document.write("");
                         window.location.href="../intro/fail_page.html";
 
                     } else {
                         document.write("");  
-                        window.location.replace("01_success.html");
+                        window.location.replace("02_success.html");
                     }
                 }
             </script>
-        </main>
+
     </body>
 </html>
