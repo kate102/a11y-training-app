@@ -4,6 +4,7 @@ import { JSDOM } from 'jsdom'
 import fs from 'fs'
 import path from 'path'
 
+
 const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
 
 let dom
@@ -17,7 +18,7 @@ describe('index.html', () => {
       dom = new JSDOM(html, { runScripts: 'dangerously' })
       container = dom.window.document.body;
     })
-    
+
     it('renders a heading element', () => {
       expect(container.querySelector('h1')).not.toBeNull();
       expect(container.querySelector('h2')).not.toBeNull();
@@ -32,4 +33,18 @@ describe('index.html', () => {
       expect(container.querySelector('button')).not.toBeNull()
       expect(getByText(container, 'Start')).toBeInTheDocument()
     })
+
+    it('will redirect to the facts page', () => {
+      dom.window.location.assign = jest.fn();
+      const redirection = shallow(<Redirection />, {
+        context: {
+          router: {
+            location: {
+              pathname: '/wubbalubbadubdub',
+            },
+          },
+        },
+      });
+      expect(window.location.assign).toBeCalledWith(`${CONFIG.APP_LEGACY_ROOT}`);
+    });
   })
