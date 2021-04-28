@@ -34,6 +34,15 @@ p {
   bottom: 5%;
   right:20%;  
 }
+
+.submit-btn {
+  background-color: lightgrey;
+  padding: 10px; 
+  border-radius: 10px;
+  /* position:absolute;
+  bottom: 5%;
+  right:20%;   */
+}
 .quit-btn {
   background-color: lightgrey;
   padding: 10px; 
