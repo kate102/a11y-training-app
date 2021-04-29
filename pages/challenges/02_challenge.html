@@ -8,14 +8,16 @@
         <link rel="stylesheet" href="../../css/style.css">
     </head>
     <body>
-        <a href="#maincontent">Skip to main content</a>
-        <div id="navbar" class="navbar" role="navigation">
+        <header>
+            <a href="#maincontent">Skip to main content</a>
+        </header>
+        <nav id="navbar" class="navbar" role="navigation">
             <ul>
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="../intro/the_tools.html">Tools</a></li>
                 <li><a href="../intro/quit_page.html" id="quitButton">Quit</a></li>      
             </ul>
-        </div>
+        </nav>
 
         <main id="maincontent" role="main">
             <h1 class="heading-font space50">The Homophone Challenge</h1>
@@ -38,7 +40,7 @@
                     Biologists are especially interested in Hydra because of their regenerative ability – they do not appear to die of old age, or to age at all.</li>
             </ol>
             <br />
-        </main>
+
 
             <form onsubmit="return checkAnswer()">
                 <label for="answer">Question: Based on the alt text, which Hydra do these images refer to?</label>
@@ -70,6 +72,6 @@
                     }
                 }
             </script>
-
+        </main>
     </body>
 </html>
