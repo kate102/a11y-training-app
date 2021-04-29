@@ -24,10 +24,20 @@ describe('index.html', () => {
       expect(container.querySelector('h2')).not.toBeNull();
     })
 
+    it('renders a has the correct landmarks', () => {
+      expect(container.querySelector('header')).not.toBeNull();
+      expect(container.querySelector('nav')).not.toBeNull();
+      expect(container.querySelector('main')).not.toBeNull();
+    })
+
     it('renders a skip link element', () => {
       expect(getByText(container, 'Skip to main content')).toBeInTheDocument();
       expect(getByText(container,'Skip to main content').closest('a')).toHaveAttribute('href', '#maincontent')
+    })
 
+    it('renders a nav bar', () => {
+      expect(getByText(container, 'Start')).toBeInTheDocument();
+      expect(getByText(container,'Start').closest('a')).toHaveAttribute('href', './pages/intro/the_facts.html')
     })
 
     it('content is correct', () => {
@@ -35,10 +45,10 @@ describe('index.html', () => {
       expect(getByText(container, 'Education Through Experience')).toBeInTheDocument();
     })
   
-    it('renders a button element', () => {
-      expect(container.querySelector('button')).not.toBeNull()
-      expect(getByText(container, 'Start')).toBeInTheDocument()
-    })
+    // it('renders a button element', () => {
+    //   expect(container.querySelector('button')).not.toBeNull()
+    //   expect(getByText(container, 'Start')).toBeInTheDocument()
+    // })
 
     // it('will redirect to the facts page', () => {
     //   dom.window.location.assign = jest.fn();
