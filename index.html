@@ -9,6 +9,12 @@
     </head>
     <body>
         <a href="#maincontent">Skip to main content</a>
+        <div id="navbar" class="navbar" role="navigation">
+            <ul>
+                <a href="./pages/intro/the_facts.html">Start</a>
+                <!-- <a  href="../intro/tools.html">Tools</a>      -->
+            </ul>
+        </div>
         <main id="maincontent" role="main">
             <header>
                 <div class="center">
@@ -17,16 +23,16 @@
                 </div>
             </header>
         </main>    
-        <footer class="space50">
+        <!-- <footer class="space50">
             <button  id="nextButton" class="btn">Start</button>
-        </footer>
+        </footer> -->
     
         <script type="text/javascript">
             localStorage.setItem("lastChallengeName", "Index Page.");
 
-            document.getElementById("nextButton").onclick = function () {
-                location.href = "/pages/intro/the_facts.html";
-            };
+            // document.getElementById("nextButton").onclick = function () {
+            //     location.href = "/pages/intro/the_facts.html";
+            // };
         </script> 
     </body>
 </html>
