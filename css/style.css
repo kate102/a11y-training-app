@@ -135,6 +135,7 @@ h2 {
   font-size: 200%;
   line-height: 1.7;
 }
+
 h2.padding20 {
   padding-top: 20px;
   font-weight: 300;
@@ -142,6 +143,12 @@ h2.padding20 {
   line-height: 1.7;
 }
 
+.hint-text {
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 150%;
+  line-height: 1.2;
+}
  /* Nav Bar */
 .navbar {
   display: flex;
