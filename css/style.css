@@ -375,6 +375,10 @@ span {
 .hidden-text {
   color: lightgrey;
 }
+.hidden-image {
+  opacity: 0;
+}
+
 
 .hideMe1{
   animation:hideMe 0.5s 1;
