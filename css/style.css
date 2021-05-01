@@ -154,6 +154,9 @@ h2.padding20 {
   padding: 0 30px;
 }
 
+.topnav-right {
+  float: right;
+}
 
 .navbar a {
   padding: 10px 20px;
