@@ -154,6 +154,7 @@ h2.padding20 {
   padding: 0 30px;
 }
 
+
 .navbar a {
   padding: 10px 20px;
   margin: 0 5px;
@@ -166,6 +167,14 @@ h2.padding20 {
 
 .navbar ul {
   display: flex;
+}
+
+.footer {
+  font-style: italic;
+  font-size: 70%;
+  bottom: 0px;
+  position: fixed;
+  padding: 10px 20px;
 }
 
 .container {
