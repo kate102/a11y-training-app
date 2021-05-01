@@ -16,7 +16,7 @@
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="../intro/the_tools.html">Tools</a></li>
                 <li><a href="../intro/resources.html">Resources</a></li>     
-                <li><a href="#previous_challenge">Previous Challenge</a></li>     
+                <li><a href="javascript:history.back()">Previous Challenge</a></li>  
             </ul>
         </nav>
 
@@ -24,30 +24,18 @@
             <h1 class="heading-font space50">Wrong!</h1>
             <h2 class="padding20">Sorry but the answer is not </h2>
             <h2 id="answer"></h2>
-            <h2>you have to return to the last challenge.</h2>
-                    
+            <h2>you have to return to the last challenge.</h2>                   
         </main>
-        <footer class="space50">
-            <button  id="nextButton" class="btn">Previous Challenge</button>
-        </footer>
+
         <footer class="footer">Kate Morris April 2021. Version 1.0</footer> 
 
         <script>
             // Check browser support
             if (typeof(Storage) !== "undefined") {
-            document.getElementById("answer").innerHTML = localStorage.getItem("answer");
-            document.getElementById("lastChallenge").innerHTML = localStorage.getItem("lastChallenge");
-
+                document.getElementById("answer").innerHTML = localStorage.getItem("answer");
             } else {
-            document.getElementById("answer").innerHTML = "Sorry, your browser does not support Web Storage...";
+                document.getElementById("answer").innerHTML = "Sorry, your browser does not support Web Storage...";
             }
-        </script>
-        
-        <script type="text/javascript">
-            document.getElementById("nextButton").onclick = function () {
-                location.href = localStorage.getItem("lastChallenge");
-
-            };
         </script>
     </body>
 </html>
