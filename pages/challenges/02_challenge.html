@@ -37,17 +37,8 @@
                     </ul>
                     <p class="hint-text">Context is everything.</p>
                 </div>
-                <!-- <div class=" box-flex2 box-size220">
-                    <p class="hint-text">My Favourite Hydra</p>
-                    <img src="../../assets/hydra1.png" height="300" class="hidden-image" alt="A picture of Hydra">
-                </div> -->
-            <!-- </div> -->
-            <!-- <p class="hint-text">Be succinct.</p> -->
-            <!-- <p class="hint-text">NOT be redundant or provide the same information as text within the context of the image.</p>
-            <p class="hint-text">NOT use the phrases "image of ..." or "graphic of ..." to describe the image. </p> -->
                 <div class=" box-flex2 box-size300">
-                    <h3>My Favourite Hydra</h3>
-                <!-- <div class="flex-items box-text"> -->
+                    <p class="hint-text">My Favourite Hydra</p>
                     <img src="../../assets/hydra1.png" height="300" class="hidden-image" alt="A picture of Hydra">
                 </div>
                 <div class=" box-flex2 box-size300">
@@ -59,14 +50,19 @@
                         <li>Hydra is a genus of small, fresh-water organisms.</li>
                     </ul>
                 </div>
+            <!-- </div> -->
+            
+            <div class="dropdown">
+                <button class="dropbtn">Which Hydra is the picture of?</button>
+                <div class="dropdown-content">
+                  <a href="#">An Island</a>
+                  <a href="#">An Album</a>
+                  <a href="#">A Roller Coaster</a>
+                  <a href="#">A Constellation</a>
+                  <a href="#">A Fresh-water Organism</a>
+                </div>
+              </div>
             </div>
-
-            <form onsubmit="return checkAnswer()">
-                <label for="answer">Question: Based on the alt text, which Hydra do these images refer to?</label>
-                <input class="answer" type="text" id="answer" size="20" name="answer"><br>
-                <input class="submit-btn" type="submit" value="Submit"> 
-            </form>
-
             <script type="text/javascript">
                 localStorage.setItem("lastChallengeName", "The Homophone Challenge");
                 document.getElementById("quitButton").onclick = function () {
