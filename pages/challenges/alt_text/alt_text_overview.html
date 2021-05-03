@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A11y Training App - Screen Reader 1</title>
+        <link rel="stylesheet" href="../../../css/style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#maincontent">Skip to main content</a>
+        </header>
+        <nav id="navbar" class="navbar" role="navigation">
+            <ul>
+                <li><a href="javascript:history.back()">Back</a></li>          
+            </ul> 
+            <ul>
+                <li><a href="../../../index.html" class="topnav-right">Home</a> </li>
+                <li><a href="../../intro/the_tools.html" class="topnav-right">Voice Over Instruction</a></li>
+                <li><a href="../../intro/resources.html" class="topnav-right">Resources</a></li>  
+                <li><a href="../../intro/quit_page.html" id="quitButton"  class="topnav-right">Quit</a></li>  
+            </ul>        
+        </nav>  
+
+        <main id="maincontent" role="main">
+            <h1 class="heading-font space50">Alt Text Overview</h1>
+            <p class="hint-text">Alt text is a meaty subject</p>
+            <p class="hint-text">Adding alternative text for images is the first principle of web accessibility.</p>
+            <p class="hint-text">It is also one of the most difficult to properly implement. </p>
+                <section id="facts" class="space50">
+                    <div class="column flex-items box-text ">
+                        <div class="box-flex box-size220" >
+                            <p class="bold">Informative images:</p>
+                            <p>Images that graphically represent concepts and information, typically pictures, photos, and illustrations. 
+                                The text alternative should be at least a short description conveying the essential information presented by the image.</p>
+                        </div>
+                        <div class="box-flex box-size220" >  
+                            <p class="bold">Decorative images:</p>
+                            <p>Provide a null text alternative (alt="") when the only purpose of an image is to add visual decoration to the page, 
+                                rather than to convey information that is important to understanding the page.</p>
+                        </div>
+                        <div class="box-flex box-size220" >          
+                            <p class="bold">Functional images:</p>
+                            <p>The text alternative of an image used as a link or as a button should describe the functionality of the link or button rather than the visual image. 
+                                Examples of such images are a printer icon to represent the print function or a button to submit a form.</p>
+                        </div>
+                    </div>
+                    <div class="column flex-items box-text ">
+                        <div class="box-flex box-size220" > 
+                            <p class="bold">Images of text:</p>
+                            <p>Readable text is sometimes presented within an image. If the image is not a logo, avoid text in images. 
+                                However, if images of text are used, the text alternative should contain the same words as in the image.</p> 
+                        </div>
+                        <div class="box-flex box-size220" > 
+                            <p class="bold">Complex images such as graphs and diagrams:</p>
+                            <p>To convey data or detailed information, 
+                                provide a full-text equivalent of the data or information provided in the image as the text alternative.</p> 
+                        </div>
+                        <div class="box-flex box-size220" > 
+                            <p class="bold">Groups of images:</p>
+                            <p>If multiple images convey a single piece of information, 
+                                the text alternative for one image should convey the information for the entire group.</p> 
+                        </div>
+                    </div>
+                </section>            
+            <script type="text/javascript">
+                localStorage.setItem("lastChallengeName", "The Alt Text Ambiguity Challenge");
+            </script> 
+        </main>
+        <footer class="footer">Kate Morris April 2021. Version 1.0</footer>
+    </body>
+</html>
