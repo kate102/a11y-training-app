@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A11y Training App - Complex Images and Alt Text </title>
+        <link rel="stylesheet" href="../../../css/style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#maincontent">Skip to main content</a>
+        </header>
+        <nav id="navbar" class="navbar" role="navigation">
+            <ul>
+                <li><a href="javascript:history.back()">Back</a></li>          
+            </ul> 
+            <ul>
+                <li><a href="../../../index.html" class="topnav-right">Home</a> </li>
+                <li><a href="../../info/sr_instructions.html" class="topnav-right">Voice Over Instructions</a></li>
+                <li><a href="../../info/alt_text_overview.html"  class="topnav-right">Alt Text Overview</a></li>        
+                <li><a href="../../info/resources.html" class="topnav-right">Additional Resources</a></li>  
+                <li><a href="../../info/quit_page.html" id="quitButton"  class="topnav-right">Quit</a></li>  
+            </ul>        
+        </nav>  
+
+        <main id="maincontent" role="main">
+            <h1 class="heading-font space50">Complex Images & Alt Text: How do I do graphs?</h1>
+            <!-- <p class="hint-text">Decorative images don’t add information to the content of a page. <br />
+                For example, the image might be included to make the website more visually attractive.</p>
+            <p class="hint-text">Audible clutter can confuse or distract the user.
+            </p>
+            <p class="hint-text">Always provide an empty alt text string as otherwise the screen reader may read out the file name.</p> -->
+            <div class="dropdown">
+                <button class="dropbtn">Which ?</button>
+                <div class="dropdown-content">
+                  <a href="../../info/fail_page.html">Picture 1</a>
+                  <a href="../../info/fail_page.html">Picture 2</a>
+                  <a href="./complex_images_success.html">Picture 3</a>
+                </div>
+              </div>
+            </div>
+            
+            <script type="text/javascript">
+                localStorage.setItem("lastChallengeName", "The Informative Alt Text Challenge");
+            </script> 
+        </main>
+        <footer class="footer">Kate Morris April 2021. Version 1.0</footer>
+    </body>
+</html>

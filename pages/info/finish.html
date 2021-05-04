@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A11y Training App - Screen Reader 1</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#maincontent">Skip to main content</a>
+        </header>
+        <nav id="navbar" class="navbar" role="navigation">
+            <ul>                  
+                <li><a href="../../index.html">Home</a> </li>
+            </ul>
+            <ul>
+                <li><a href="../info/sr_instructions.html" class="topnav-right">Voice Over Instructions</a></li>
+                <li><a href="../info/resources.html" class="topnav-right">Additional Resources</a></li>  
+            </ul> 
+        </nav>
+
+        <main id="maincontent" role="main">
+            <h1 class="heading-font space50">YOU ROCK!</h1>
+            <p class="padding20 hint-text">You made to the end</p>
+            <p class="hint-text">That is a staggering achievement! <br />
+            well done</p>
+
+                 
+        </main>
+        <footer class="footer">Kate Morris April 2021. Version 1.0</footer> 
+
+        <script>
+            // Check browser support
+            if (typeof(Storage) !== "undefined") { 
+                document.getElementById("lastChallengeName").innerHTML = localStorage.getItem("lastChallengeName");
+
+            } else {
+                document.getElementById("lastChallengeName").innerHTML = "Sorry, your browser does not support Web Storage...";
+            }
+        </script>
+
+    </body>
+</html>
