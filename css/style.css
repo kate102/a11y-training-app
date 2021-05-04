@@ -277,6 +277,18 @@ div.boxed {
   height: 220px;
 }
 
+.box-size250{
+  height: 250px;
+}
+
+.box-size300{
+  height: 300px;
+}
+
+.box-size320{
+  height: 320px;
+}
+
 .box-text {
   color: rgb(2, 87, 87);
 }
