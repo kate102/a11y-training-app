@@ -8,7 +8,7 @@
 html,body, a {
   font-family: 'Open Sans','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7;
-  background-color: rgb(2, 87, 87);
+  background-color: rgb(22, 122, 122);
   color: aliceblue;
   text-align:center
 }
@@ -290,7 +290,7 @@ div.boxed {
 }
 
 .box-text {
-  color: rgb(2, 87, 87);
+  color: rgb(2, 94, 94);
 }
 
 span {

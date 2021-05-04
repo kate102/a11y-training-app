@@ -38,8 +38,8 @@ describe('index.html', () => {
     it('renders a nav bar', () => {
       expect(getByText(container, 'Start')).toBeInTheDocument();
       expect(getByText(container,'Start').closest('a')).toHaveAttribute('href', './pages/info/the_facts.html')
-      expect(getByText(container, 'Resources')).toBeInTheDocument();
-      expect(getByText(container,'Resources').closest('a')).toHaveAttribute('href', './pages/info/resources.html')
+      expect(getByText(container, 'Additional Resources')).toBeInTheDocument();
+      expect(getByText(container,'Additional Resources').closest('a')).toHaveAttribute('href', './pages/info/resources.html')
     })
 
     it('content is correct', () => {

@@ -1,6 +1,6 @@
 # a11y-training-app
 
-## Purpose: To create a website that gamifys accessibility issues and solutions
+## Purpose: To create a website that provides the experience of users with accessibility issues
 
 ## Plan:
 
