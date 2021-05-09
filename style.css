@@ -27,7 +27,7 @@ p {
   margin: 10px 0;
 }
 .btn {
-  background-color: lightgrey;
+  background-color:  aliceblue;
   padding: 10px; 
   border-radius: 10px;
   position:absolute;
@@ -36,15 +36,14 @@ p {
 }
 
 .submit-btn {
-  background-color: lightgrey;
-  padding: 10px; 
+  padding: 8px 16px;
   border-radius: 10px;
-  /* position:absolute;
-  bottom: 5%;
-  right:20%;   */
+  background-color: green;
+  color: aliceblue;
 }
+
 .quit-btn {
-  background-color: lightgrey;
+  background-color:  aliceblue;
   padding: 10px; 
   border-radius: 10px;
   position:absolute;
@@ -52,7 +51,7 @@ p {
   left:30%;  
 }
 .answer {
-  background-color: lightgrey;
+  background-color: aliceblue;
   padding: 10px; 
   border-radius: 10px;
   position:relative;
@@ -169,6 +168,7 @@ h2.padding20 {
   padding: 10px 20px;
   margin: 0 5px;
   text-decoration: none;
+  /* border-radius: 10px; */
 }
 
 .navbar a:hover {
@@ -177,6 +177,27 @@ h2.padding20 {
 
 .navbar ul {
   display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+/* Next Navigation */
+.next-btn {
+  background-color: green;
+  color: aliceblue;
+  border-radius: 10px;
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+.next-btn a:hover {
+  background-color: aliceblue;
+  color: black;
 }
 
 .footer {
@@ -200,7 +221,6 @@ h2.padding20 {
 
 div.boxed {
   font-size: larger;
-  /* border-color: aliceblue; */
   border: dashed 2px #78909C;
   border-radius: 10px;
   border-style: solid;
@@ -263,7 +283,7 @@ div.boxed {
   margin: 1%;
   width: 23%;
   height: 300px;
-  background-color: lightgrey;
+  background-color:  aliceblue;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
@@ -400,7 +420,7 @@ span {
   }
 }
 .hidden-text {
-  color: lightgrey;
+  color: aliceblue;
 }
 .hidden-image {
   opacity: 0;
@@ -462,7 +482,7 @@ span {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: lightgrey;
+  background-color:  aliceblue;
   color:  rgb(2, 87, 87);
   padding: 16px;
   font-size: 16px;
@@ -504,21 +524,3 @@ span {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: grey;}
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
-
-a:hover {
-  background-color: aliceblue;
-  color: black;
-}
-
-.next {
-  background-color: #green;
-  color: aliceblue;
-  border-radius: 10%;
-  bottom: 10px;
-  position: absolute;
-}
