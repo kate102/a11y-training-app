@@ -45,16 +45,34 @@
                     <img src="../../../assets/dd_image.png" height="200" alt="A scattering of three-dimensional shapes, geometric gold and organic bubbles with various textures, float in space.">
                 </div>
 
-            <div class="dropdown">
-                <button class="dropbtn">Which picture has the incorrect alt text string?</button>
-                <div class="dropdown-content">
-                  <a href="../../info/fail_page.html">Picture 1</a>
-                  <a href="../../info/fail_page.html">Picture 2</a>
-                  <a href="./decorative_success.html">Picture 3</a>
-                </div>
-              </div>
-            </div>
-            
+            <form onsubmit="return checkAnswer()">
+                <label for="answer" class="hint-text question-text">Which image has the incorrect alt text string?</label>
+                <br />
+                <select class="select-dropdown"  name="answer" id="answer" >
+                    <option value="fail">Image 1</option>
+                    <option value="fail">Image 2</option>
+                    <option value="success">Image 3</option>
+                </select>
+                <input type="submit" class="submit-btn" value="Submit">
+            </form>
+                <!-- <select class="select-dropdown"  name="answer" id="answer" > -->
+
+                <script>
+                    function checkAnswer() {
+                        console.log("If you are reading this you are cheating and might as well go and do something else with your time");
+                        var value = document.getElementById("answer").value;
+                        console.log(value)
+                        
+                        if ( value.toLowerCase() != "success") {
+                            document.write("");
+                            window.location.href="../../info/fail_page.html";
+    
+                        } else {
+                            document.write("");  
+                            window.location.replace("./decorative_success.html");
+                        }
+                    }
+                </script>
             <script type="text/javascript">
                 localStorage.setItem("lastChallengeName", "The Informative Alt Text Challenge");
             </script> 
