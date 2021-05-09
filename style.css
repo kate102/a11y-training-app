@@ -249,7 +249,7 @@ div.boxed {
   margin: 1%;
   width: 23%;
   height: 150px;
-  background-color: lightgrey;
+  background-color: aliceblue;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
@@ -504,3 +504,21 @@ span {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: grey;}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.next {
+  background-color: #green;
+  color: aliceblue;
+  border-radius: 10%;
+  bottom: 10px;
+  position: absolute;
+}
