@@ -42,6 +42,13 @@ p {
   color: aliceblue;
 }
 
+.select-dropdown {
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  color: rgb(2, 94, 94);;
+}
+
 .quit-btn {
   background-color:  aliceblue;
   padding: 10px; 
@@ -147,6 +154,10 @@ h2.padding20 {
   font-weight: 300;
   font-size: 150%;
   line-height: 1.2;
+}
+
+.question-text {
+  color: aliceblue;
 }
  /* Nav Bar */
 .navbar {
