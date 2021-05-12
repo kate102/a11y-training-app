@@ -74,7 +74,7 @@
                     console.log("If you are reading this you are cheating and might as well go and do something else with your time");
                     var answer = document.getElementById("answer").value;
                     
-                    if ( answer.toLowerCase() != "smile") {
+                    if ( !answer.toLowerCase().includes("smile")) {
                         document.write("");
                         window.location.href="../../info/fail_page.html";
 

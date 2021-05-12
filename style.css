@@ -198,8 +198,8 @@ a {
 
 /* Next Navigation */
 .next-btn {
-  background-color: green;
-  color: aliceblue;
+  background-color: aliceblue;
+  color:  rgb(2, 94, 94);;
   border-radius: 10px;
   bottom: 10px;
   right: 10px;
