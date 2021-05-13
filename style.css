@@ -300,6 +300,9 @@ div.boxed {
   text-align: center;
 }
 /* KM Needs to be tidied up  */
+.box-size100{
+  height: 100px;
+}
 .box-size200{
   height: 200px;
 }
